@@ -81,12 +81,13 @@ This project conducts an exhaustive quantitative analysis of the **"ups and down
 
 To prevent lookahead bias and domain shift over 20 years of price appreciation, all features are engineered to be **stationary and scale-invariant**:
 1. **Trend Deviations:** Distance from 20-day, 50-day, and 200-day SMAs:
-   $$\text{Dist\_SMA} = \frac{\text{Close} - \text{SMA}}{\text{SMA}}$$
+   $$\text{Dist}_{\text{SMA}} = \frac{\text{Close} - \text{SMA}}{\text{SMA}}$$
 2. **Golden / Death Cross Signal:**
    $$\text{Spread} = \frac{\text{SMA}_{50} - \text{SMA}_{200}}{\text{SMA}_{200}}$$
 3. **Momentum Indicators:**
    * 14-Day Relative Strength Index (`RSI_14`)
-   * Normalized MACD: $\frac{\text{EMA}_{12} - \text{EMA}_{26}}{\text{Close}}$, Signal Line, Histogram
+   * Normalized MACD:
+     $$\text{MACD}_{\text{norm}} = \frac{\text{EMA}_{12} - \text{EMA}_{26}}{\text{Close}}$$
 4. **Volatility Indicators:**
    * Bollinger Bandwidth & Bollinger %B
    * 20-Day Annualized Historical Volatility (`Hist_Vol_20d`)
