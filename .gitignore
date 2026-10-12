@@ -1,0 +1,18 @@
+# Kaggle Dataset Raw Files (Large CSVs > 250MB)
+data/
+*.csv
+*.zip
+
+# Python & Jupyter Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*.log
+
+# OS & Environment
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
